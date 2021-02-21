@@ -11,6 +11,7 @@ export default class Footer extends Component {
         return (
             <div className="footer">
                 <p className="footer-text">Sudoku Game Solver © 2021</p>
+                <a className="nav-link" href='https://github.com/EricLiclair/sudoku' > ☕ </a>
             </div>
         );
     }
