@@ -25,7 +25,7 @@ SECRET_KEY = '6da4f%isnh7xf1to%kurzjr6r+!2znbfxho1%*evw#6-6t=+yc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'sudoku-solverrr.herokuapp.com']
 
 
 # Application definition
