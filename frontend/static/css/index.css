@@ -213,6 +213,10 @@ a {
   color: #ffffff;
 }
 
+.footer-text {
+  color: #ffffff;
+}
+
 @media only screen and (max-width: 376px) {
   .nav-link {
     font-size: 12px;

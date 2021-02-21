@@ -10,8 +10,7 @@ export default class Footer extends Component {
     render() {
         return (
             <div className="footer">
-                <p className="footer-text">Sudoku Game Solver © 2021</p>
-                <a className="nav-link" href='https://github.com/EricLiclair/sudoku' > ☕ </a>
+                <a href='https://github.com/EricLiclair/sudoku' className="footer-text">Sudoku Game Solver © 2021</a>
             </div>
         );
     }
