@@ -1,0 +1,224 @@
+:root {
+  --primary-color: #344861;
+  --secondary-color: #6e7c8c;
+  --tertiary-color: #222e3e;
+  --font: "Source Sans Pro", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* header styles */
+#header {
+  height: 10vh;
+  width: 100%;
+  border-bottom: solid 1px #c0c0c8;
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-icon {
+  position: relative;
+  left: 20%;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: var(--font);
+  color: var(--tertiary-color);
+}
+
+.nav-dot {
+  font-size: 32px;
+  color: #1eabd6;
+}
+
+/* homepage styles */
+#app {
+  width: 96%;
+  min-height: 80vh;
+  overflow-x: hidden;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.homepage-container {
+  width: 60%;
+}
+
+.title {
+  font-family: var(--font);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.content {
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+.homepage-content {
+  overflow-x: hidden;
+  width: 100%;
+  padding: 3%;
+}
+
+.tips {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #f3f6fa;
+}
+
+/* Grid Styling */
+#main-container {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.val-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.val-container input {
+  font-family: var(--font);
+  border: solid 1px var(--primary-color);
+  text-align: center;
+  /* 25px when small size else 30pxmin */
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+}
+
+.filled {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.error {
+  color: red;
+}
+
+/* General Purpose */
+a {
+  text-decoration: none;
+}
+
+.button-holder {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  outline: none;
+  margin: 15px;
+  height: 30px;
+  width: 120px;
+  border-radius: 2px;
+}
+
+.check-btn {
+  border: solid 1px var(--primary-color);
+  background: #ffffff;
+  color: var(--primary-color);
+}
+
+.check-btn:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.redirect {
+  color: #344861;
+}
+
+.error-notif {
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 28px;
+  padding: 2%;
+  border-radius: 2px;
+  background: #f3f6fa;
+  color: var(--secondary-color);
+}
+
+/* All Games Styling */
+.games {
+  margin-top: 5%;
+  border-bottom: solid 1px #ffffff;
+  transition: ease-out 0.5s;
+}
+
+.games:hover {
+  border-bottom: solid 1px var(--secondary-color);
+}
+
+#footer {
+  font-family: var(--font);
+  font-size: 12px;
+  height: 10vh;
+  background: var(--tertiary-color);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1%;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 376px) {
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .nav-icon {
+    font-size: 22px;
+  }
+}
